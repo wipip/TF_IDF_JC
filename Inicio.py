@@ -8,7 +8,7 @@ from nltk.stem import SnowballStemmer
 st.title("Demo de TF-IDF con Preguntas y Respuestas")
 
 st.write("""
-Cada línea se trata como un **documento** (puede ser una frase, un párrafo o un texto más largo).  
+Cada línea se trata como un **denunciado** (puede ser una frase, un párrafo o un texto más largo).  
 ⚠️ Los documentos y las preguntas deben estar en **inglés**, ya que el análisis está configurado para ese idioma.  
 
 La aplicación aplica normalización y *stemming* para que palabras como *playing* y *play* se consideren equivalentes.
@@ -16,11 +16,11 @@ La aplicación aplica normalización y *stemming* para que palabras como *playin
 
 # Ejemplo inicial en inglés
 text_input = st.text_area(
-    "Escribe tus documentos (uno por línea, en inglés):",
+    "Escribe tus enunciados (uno por línea, en inglés):",
     "The dog barks loudly.\nThe cat meows at night.\nThe dog and the cat play together."
 )
 
-question = st.text_input("Escribe una pregunta (en inglés):", "Who is playing?")
+question = st.text_input("Escribe una pregunta relacionada a los enunciados previamente ingresados (en inglés):", "Who is playing?")
 
 # Inicializar stemmer para inglés
 stemmer = SnowballStemmer("english")

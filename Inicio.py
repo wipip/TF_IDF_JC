@@ -8,7 +8,7 @@ from nltk.stem import SnowballStemmer
 st.title("Demo de TF-IDF con Preguntas y Respuestas")
 
 st.write("""
-Cada línea se trata como un **denunciado** (puede ser una frase, un párrafo o un texto más largo).  
+Cada línea se trata como un **enunciado** (puede ser una frase, un párrafo o un texto más largo).  
 ⚠️ Los documentos y las preguntas deben estar en **inglés**, ya que el análisis está configurado para ese idioma.  
 
 La aplicación aplica normalización y *stemming* para que palabras como *playing* y *play* se consideren equivalentes.

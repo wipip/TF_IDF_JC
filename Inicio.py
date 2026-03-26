@@ -23,10 +23,10 @@ La aplicación aplica normalización y *stemming* para que palabras como *playin
 # Ejemplo inicial en inglés
 text_input = st.text_area(
     "Escribe tus enunciados (uno por línea, en inglés):",
-    "The dog barks loudly.\nThe cat meows at night.\nThe dog and the cat play together."
+    "Tom plays with john.\njohn plays football.\nThe kids like to play."
 )
 
-question = st.text_input("Escribe una pregunta relacionada a los enunciados previamente ingresados (en inglés):", "Who is playing?")
+question = st.text_input("Escribe una pregunta relacionada a los enunciados previamente ingresados (en inglés):", "Who does john plays with?")
 
 # Inicializar stemmer para inglés
 stemmer = SnowballStemmer("english")
